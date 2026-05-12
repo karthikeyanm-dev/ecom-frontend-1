@@ -19,7 +19,7 @@ const Home = () => {
                 return res.json();
             })
             .then((data) => {
-                setProducts(data["products"]);
+                setProducts(data);
                 setLoading(false);
             })
             .catch((err) => {
